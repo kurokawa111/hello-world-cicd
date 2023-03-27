@@ -18,5 +18,4 @@ jobs:
         run: |
           echo "Hello World !"
       - name: Display Python version
-        run: python -c "import sys; print(sys.version)" |
-          pyenv versions
+        run: python -c "import sys; print(sys.version)"
