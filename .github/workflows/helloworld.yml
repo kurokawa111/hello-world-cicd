@@ -28,4 +28,4 @@ jobs:
       - name: Pip install
         run: pipenv install --dev
       - name: pytest
-        run: pytest
+        run: pipenv shell pytest
