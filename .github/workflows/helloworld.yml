@@ -27,3 +27,5 @@ jobs:
         run: python -c "import sys; print(sys.version)"
       - name: Pip install
         run: pipenv install --dev
+      - name: pytest
+        run: pytest
