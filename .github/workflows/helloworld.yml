@@ -28,4 +28,9 @@ jobs:
       - name: Pip install
         run: pipenv install --dev
       - name: pytest
-        run: pipenv run pytest
+        run: pipenv run pytest --junitxml=junit/test-results.xml
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: junit/test-results.xml
